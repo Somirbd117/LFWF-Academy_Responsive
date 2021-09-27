@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.section{
+    width: 1200px;
+    margin: auto;
+}
+img{
+    max-width: 100%;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix::before{
+    content: "";
+    clear: both;
+    display: block;
+}
+/*Header Section CSS*/
+.header-section{
+    background-color: #22c2a2;
+    padding: 10px 0;
+}
+.header-logo{
+    width: 30%;
+}
+.header-logo h2 {
+    color: #fff;
+    margin-left: 6%;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.header-menu{
+    width: 70%;
+    text-align: right;
+}
+.header-menu ul{
+    margin-right: 2%;
+    margin-top: 5px;
+}
+.header-menu ul li{
+    display: inline-block;
+}
+.header-menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: .5s;
+    position: relative;
+}
+.header-menu ul li a:hover{
+    color: #000;
+}
+.header-menu ul li a::before {
+
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    top: 74%;
+    left: 11px;
+    transition: .5s;
+}
+.header-menu ul li a:hover::before{
+    width: 70%;
+}
+/*Banner Section CSS*/
+.banner-section{
+    padding: 148px 0;
+    background: url(./img/header-bg01.jpg) bottom center no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.banner-content{
+    text-align: center;
+    color: #fff;
+    font-family: 'Crimson Text', serif;
+}
+.banner-content h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.banner-content p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #cef2eb;
+}
+.banner-btn {
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 5px 22px;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.banner-btn p {
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+.banner-btn::before{
+    content: "";
+    height: 0;
+    width: 0;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    z-index: -1;
+    transition: .5s;
+}
+.banner-btn:hover::before{
+    height: 100%;
+    width: 100%;
+}
+/*Service Section CSS*/
+.service-section{
+    text-align: center;
+    padding: 100px 0;
+    border-bottom: 2px solid #22c2a2;
+}
+.service-title{}
+.service-title h2{
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.service-content{}
+.service-content p{
+    color: #666666;
+}
+.service-items {
+    text-align: center;
+    margin-top: 70px;
+    padding: 60px 0;
+}
+.s-item{
+    width: 23%;
+    margin-right: 2%;
+    transition: .5s;
+}
+.s-item:last-child{
+    margin-right: 0;
+}
+.item-icon{}
+.item-icon span {
+    font-size: 34px;
+    color: #0dbf9b;
+}
+.item-title{}
+.item-title h5 {
+    font-weight: 900;
+    color: #666;
+}
+.item-content{}
+.item-content p{}
+.s-item:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+/*About Section CSS*/
+.about-section{
+    padding: 100px 0;
+    text-align: center;
+}
+.about-box{
+    padding: 30px 0;
+    color: #666;
+}
+.about-img{
+    width: 42%;
+    margin-left: 4%;
+}
+.about-img img{}
+.about-contents{
+    width: 50%;
+    text-align: left;
+    margin-left: 3%;
+}
+.about-contents h5{}
+.about-contents p{}
+/*Contact Section CSS*/
+.contact-section{
+    padding: 100px 0;
+    text-align: center;
+    background-color: #f6f6f6;
+}
+.contact-box{
+    text-align: center;
+}
+.contact-item {
+    width: 20%;
+    margin: 3% 6%;
+}
+.c-icon{}
+.c-icon span{
+    color: #22c2a2;
+}
+.c-content{}
+.c-content p{}
+/*Social Section CSS*/
+.social-section{
+    background-color: #22c2a2;
+    padding: 10px 0;
+    text-align: center;
+}
+.s-icon{
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    display: inline-block;  
+    margin-right: 38px;
+}
+.s-icon span {
+    color: #fff;
+    font-size: 30px;
+    line-height: 30px;
+}
+/*Footer Section CSS*/
+.footer-section{
+    background-color: #222222;
+    color: #474747;
+    text-align: center;
+}
+.footer-section p{
+    padding: 15px 0;
+}
